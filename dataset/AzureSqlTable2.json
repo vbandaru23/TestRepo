@@ -1,0 +1,32 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Prop_1",
+				"type": "varchar"
+			},
+			{
+				"name": "Prop_2",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sp_sp"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
